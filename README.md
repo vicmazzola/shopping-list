@@ -1,4 +1,4 @@
-# Project Title
+# Shopping List
 
 Web application for a shopping list created as part of the course on building dynamic pages with JavaScript.
 
