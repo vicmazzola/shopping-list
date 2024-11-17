@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+
+<body>
+
+<main>
+    <img src="./img/bag.png" alt="shopping bag">
+    <form>
+        <input id="input-item" type="text" placeholder="Type the product you want to add"></input>
+        <button id="add-button">Save item</button>
+    </form>
+
+    <div class="container-list">
+        <h2>Shopping List</h2>
+        <hr>
+
+        <ul>
+            <li>
+                <div class="list-item-container">
+                    <div>
+                        <div class="container-checkbox">
+                            <label for="checkbox-1">
+                                <input type="checkbox" class="input-checkbox" id="checkbox-1"/>
+                                <div class="custom-checkbox checked"></div>
+                            </label>
+                        </div>
+                        <p>Cat food</p>
+                    </div>
+
+                    <div>
+                        <button class="item-list-button">
+                            <img src="./img/delete.svg" alt="remove">
+                        </button>
+                        <button class="item-list-button">
+                            <img src="./img/edit.svg" alt="edit">
+                        </button>
+                    </div>
+                </div>
+                <p class="date-text">Monday (31/10/2022) at 08:30</p>
+            </li>
+        </ul>
+    </div>
+</main>
+</body>
+
+</html>
+
+
