@@ -9,6 +9,7 @@
     --secondary-color: #C2373F;
     --neutral: #F9F9F9;
     --black: #131730;
+    --purple: #9353FF;
     --title-font: "Krona One", sans-serif;
     --text-font: 'Numans', sans-serif;
     --blue-gradient: linear-gradient(180deg, #000000 0%, #26327F 100%);
@@ -162,9 +163,42 @@ ul {
 }
 
 
-
 .action-button {
     background-color: transparent;
     border: none;
+}
+
+
+
+.suggestion-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+    height: 130px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: var(--neutral);
+}
+
+.color-button {
+    background-color: var(--purple);
+    color: white;
+    font-family: var(--text-font), serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#input-suggestion {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 18px;
+    border: 1px solid var(--black);
+    width: 180px;
+    font-family: var(--text-font), serif;
 }
 
