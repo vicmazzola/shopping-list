@@ -122,17 +122,24 @@ ul {
     line-height: 20px;
 }
 
-.input-checkbox {
+.list-date-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.checkbox-input {
     display: none;
 }
 
-.custom-checkbox {
+.checkbox-customized {
     width: 20px;
     height: 20px;
     background-color: var(--neutral);
     border: 1px solid var(--black);
     cursor: pointer;
     border-radius: 4px;
+    margin-right: 8px;
 }
 
 .checked {
@@ -140,7 +147,7 @@ ul {
     position: relative;
 }
 
-.custom-checkbox.checked::after {
+.checked::after {
     content: "";
     position: absolute;
     left: 30%;
@@ -154,13 +161,10 @@ ul {
     transform: rotate(-140deg);
 }
 
-.list-date-text {
-    font-size: 12px;
-    line-height: 20px;
-}
 
-.item-list-button {
-    border: none;
+
+.action-button {
     background-color: transparent;
+    border: none;
 }
 
