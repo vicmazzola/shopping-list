@@ -96,8 +96,14 @@ form {
     gap: 8px;
 }
 
+.container-list {
+    text-align: center;
+    width: 100%;
+}
+
 .list-item-container {
     display: flex;
+    align-content: center;
     justify-content: space-between;
 }
 
@@ -106,8 +112,14 @@ form {
     gap: 8px;
 }
 
+.name-buying-container {
+    display: flex;
+}
+
 ul {
     list-style-type: none;
+    width: 100%;
+    line-height: 20px;
 }
 
 .input-checkbox {
@@ -142,7 +154,7 @@ ul {
     transform: rotate(-140deg);
 }
 
-.date-text {
+.list-date-text {
     font-size: 12px;
     line-height: 20px;
 }
@@ -152,6 +164,3 @@ ul {
     background-color: transparent;
 }
 
-.container-list {
-    width: 100%;
-}
