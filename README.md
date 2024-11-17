@@ -1,6 +1,3 @@
-
-![Descricao da sua imagem](https://imgur.com/C8TfWXc.png)
-
 # Project Title
 
 Web application for a shopping list created as part of the course on building dynamic pages with JavaScript.
