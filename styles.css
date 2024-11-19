@@ -133,7 +133,7 @@ ul {
     display: none;
 }
 
-.checkbox-customized {
+.customized-checkbox {
     width: 20px;
     height: 20px;
     background-color: var(--neutral);
