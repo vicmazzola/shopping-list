@@ -87,7 +87,13 @@ function addItem(event) {
 
     listItemContainer.appendChild(nameOfItemContainer);
     listItemContainer.appendChild(buttonsContainer);
+
+    const itemDate = document.createElement("p");
+    itemDate.innerText = `${new Date().toLocaleDateString("en-GB", {weekday: "long"})} (${new Date().toLocaleDateString()}) in $ ${new Date().toLocaleTimeString("pt-BR", {hour: "numeric", minute: "numeric"})} `
+    itemDate.classList.add("text-date");
+
     itemFromList.appendChild(listItemContainer);
+    listItemContainer.appendChild(itemDate);
     shoppingList.appendChild(itemFromList);
 
 }
