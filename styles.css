@@ -21,14 +21,10 @@ body {
     height: 100vh;
 
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    width: 440px;
-    padding: 56px;
-
+    justify-content: center;
     align-items: center;
-    border-radius: 16px;
+    gap: 24px;
+    margin: 0;
 }
 
 main {
@@ -38,7 +34,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
+    max-width: 600px;
     width: 440px;
     padding: 56px;
 
