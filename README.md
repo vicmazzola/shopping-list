@@ -1,19 +1,28 @@
 # Shopping List
 
-Web application for a shopping list created as part of the course on building dynamic pages with JavaScript.
+This web application was built as part of the Alura course **JavaScript: building dynamic pages**. <br>It follows the course content with modifications.
 
 ## 🔨 Project Features
 
-This application allows users to dynamically add items to a shopping list, with options to delete and edit them. Items include the name, creation date, and time. Additionally, users can mark items as purchased using a checkbox.
+- Add, edit, and delete items dynamically.
+- Mark items as purchased or not.
+- Display creation date and time for each item.
+- Separate purchased items from the main list.
 
-![Inserção no campo de digitação do valor ração de gato, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado ração de cachorro. Em seguida, é clicado no botão de exclusão, e o item é excluído.](https://imgur.com/isPj7Xf.gif)
 
-## ✔️ Techniques and Technologies Used
-The techniques and technologies used in this project include:
+## ✔️ Technologies Used
+- **HTML** for page structure.
+- **CSS** for styling, including **Bootstrap** for responsive design.
+- **JavaScript** for interactive elements and **DOM manipulation**.
 
--HTML: for creating the screen elements; <br>
--CSS: for styling the application; <br>
--JavaScript: for building dynamic elements through DOM manipulation.
+
+## 📂 Project Structure
+- **index.html**: The main HTML file that provides the structure and content of the web page.
+- **styles.css**: Contains all the styles applied to the application, including custom styles for visual consistency.
+- **script.js**: The primary JavaScript file responsible for core interactivity, such as handling events and updating the DOM.
+- **/js/**: Directory containing modular JavaScript files that manage individual features (e.g., adding items, editing items, managing the list).
+- **/img/**: Directory for storing image assets used in the project, such as icons or illustrations.
+
 
 
 
