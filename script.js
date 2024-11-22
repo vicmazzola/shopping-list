@@ -1,4 +1,4 @@
-import { addItem } from "./js/addItem.js";
+import { addItem } from "./js/addItems.js";
 import { checkBoughtList } from "./js/checkBoughtList.js";
 
 const saveItemButton = document.getElementById("add-item");
