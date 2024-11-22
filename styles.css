@@ -28,7 +28,7 @@ body {
 }
 
 main {
-    background-color: var(--neutral);
+    background-color: #EBEDE3;
     margin-top: 64px;
 
     display: flex;
