@@ -27,57 +27,32 @@
         <hr>
 
         <ul id="shopping-list">
-            <li>
-                <div class="list-item-container">
-                    <div class="name-buying-container">
-                        <div class="checkbox-container">
-                            <label for="checkbox-1">
-                                <input type="checkbox" class="checkbox-input" id="checkbox-1">
-                                <div class="customized-checkbox checked"></div>
-                            </label>
-                        </div>
-
-                        <p>Cat food</p>
-                    </div>
-
-
-                    <div>
-                        <button class="list-item-button">
-                            <img src="./img/delete.svg" alt="remove">
-                        </button>
-                        <button class="list-item-button">
-                            <img src="./img/edit.svg" alt="edit">
-                        </button>
-                    </div>
-                </div>
-                <p class="text-date">Monday (31/10/2022) at 08:30</p>
-            </li>
+            <p id="empty-list-message" style="display: block">Your list is empty. Add some items to not forget something
+                next time!</p>
         </ul>
+        <div id="bought-list-container">
+            <h2>Bought</h2>
+            <hr/>
+            <ul id="bought-list">
 
-        <h2>Bought</h2>
-        <hr />
-        <ul id="bought-list">
-
-        </ul>
-
+            </ul>
+        </div>
 
     </div>
 </main>
 
-<script src="./script.js"></script>
+<script src="./script.js" type="module"></script>
 
 </body>
 
 <br><br>
 <div class="suggestion-container">
     <form>
-    <h2>Suggestions</h2>
-    <input id="input-suggestion" type="text" id="suggestion" placeholder="Type your suggestion"></input>
-    <button class="color-button">Send</button>
+        <h2>Suggestions</h2>
+        <input id="input-suggestion" type="text" id="suggestion" placeholder="Type your suggestion"></input>
+        <button class="color-button">Send</button>
     </form>
 </div>
-
-
 
 
 </html>
