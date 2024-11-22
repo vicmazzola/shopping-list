@@ -1,6 +1,4 @@
-const item = document.getElementById("input-item");
 const saveItemButton = document.getElementById("add-item");
-const shoppingList = document.getElementById("shopping-list");
 const boughtList = document.getElementById("bought-list");
 
 let counter = 0;
