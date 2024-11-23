@@ -1,8 +1,6 @@
-import {saveListsToLocalStorage} from "./localStorageHandler.js";
 
 const boughtListContainer = document.getElementById("bought-list-container");
-const shoppingList = document.getElementById("shopping-list");
-const boughtList = document.getElementById("bought-list");
+
 
 
 export function checkBoughtList(list) {

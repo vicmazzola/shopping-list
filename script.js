@@ -3,10 +3,13 @@ import { checkBoughtList } from "./js/checkBoughtList.js";
 import { checkEmptyList } from "./js/checkEmptyList.js";
 import { createListItem } from "./js/createListItem.js"
 import {loadListsFromLocalStorage } from "./js/localStorageHandler.js";
-
+import { deleteAllItems } from "./js/deleteItem.js";
 
 const saveItemButton = document.getElementById("add-item");
 saveItemButton.addEventListener("click", addItem);
+
+const deleteAllButton = document.getElementById("delete-all");
+deleteAllButton.addEventListener("click", deleteAllItems);
 
 const shoppingList = document.getElementById("shopping-list");
 const boughtList = document.getElementById("bought-list");

@@ -20,5 +20,19 @@ const deleteItem = (element) => {
 
 export { deleteItem };
 
+const deleteAllItems = () => {
+    let confirmation = confirm("Are you sure you want to delete all items?");
+    if (confirmation) {
 
+        shoppingList.innerHTML = "";
+        boughtList.innerHTML = "";
+
+
+        checkEmptyList(shoppingList);
+        checkBoughtList(boughtList);
+        saveListsToLocalStorage(shoppingList, boughtList);
+    }
+};
+
+export { deleteAllItems };
 
