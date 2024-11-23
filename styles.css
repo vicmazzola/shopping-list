@@ -37,7 +37,7 @@ main {
     max-width: 600px;
     width: 440px;
     padding: 56px;
-
+    text-align: center;
     align-items: center;
     border-radius: 16px;
 }
@@ -183,5 +183,14 @@ ul {
 
 .list-container {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 16px;
+        margin-left: 36px;
+        padding: 18px;
+        width: auto;
+    }
 }
 

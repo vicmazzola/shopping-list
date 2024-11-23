@@ -18,36 +18,39 @@
 <body>
 
 
+<div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <main class="w-100">
+        <div class="row justify-content-center">
+            <div class="col-md col-12 text-center">
 
+                <img src="./img/bag2.jpg" alt="shopping bag" class="img-fluid d-block mx-auto">
 
+                <form>
+                    <input class="input-item form-control mb-2" id="input-item" type="text"
+                           placeholder="Type the product you want to add"></input>
+                    <button class="button-item w-100 mb-3" id="add-item">Save item</button>
+                </form>
 
-<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-    <main>
-        <img src="./img/bag2.jpg" alt="shopping bag">
-        <form>
-            <input class="input-item" id="input-item" type="text"
-                   placeholder="Type the product you want to add"></input>
-            <button class="button-item" id="add-item">Save item</button>
-        </form>
+                <div class="container-list">
+                    <h2>Shopping List</h2>
+                    <hr>
 
-        <div class="container-list">
-            <h2>Shopping List</h2>
-            <hr>
+                    <ul id="shopping-list">
 
-            <ul id="shopping-list">
+                        <p id="empty-list-message" style="display: block">Your list is empty. Add some items to not
+                            forget
+                            something
+                            next time!</p>
+                    </ul>
+                    <div id="bought-list-container">
+                        <h2>Bought</h2>
+                        <hr/>
+                        <ul id="bought-list">
 
-                <p id="empty-list-message" style="display: block">Your list is empty. Add some items to not forget
-                    something
-                    next time!</p>
-            </ul>
-            <div id="bought-list-container">
-                <h2>Bought</h2>
-                <hr/>
-                <ul id="bought-list">
-
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </div>
     </main>
 </div>
