@@ -1,9 +1,11 @@
 # Shopping List
 
-This web application was built as part of the Alura course **JavaScript: building dynamic pages**. <br>It follows the course content with modifications.
+This web application was built as part of the Alura course **JavaScript: building dynamic pages**. <br>It follows the course content with modifications. <br>The deployment was done using Vercel, ensuring smooth and fast hosting.
+
+## 🌐 Live Demo
+Explore the application live at: [Shopping List](https://shopping-list-wine-eta.vercel.app/)
 
 ## 🔨 Project Features
-
 - Add, edit, and delete items dynamically.
 - Mark items as purchased or not.
 - Display creation date and time for each item.
