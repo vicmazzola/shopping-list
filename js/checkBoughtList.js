@@ -1,4 +1,7 @@
+
 const boughtListContainer = document.getElementById("bought-list-container");
+
+
 
 export function checkBoughtList(list) {
     if (list.childElementCount === 0) {
@@ -6,4 +9,5 @@ export function checkBoughtList(list) {
     } else {
         boughtListContainer.style.display = "block";
     }
+
 }
