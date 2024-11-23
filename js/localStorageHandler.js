@@ -25,23 +25,29 @@ export function saveListsToLocalStorage(shoppingList, boughtList) {
  */
 
 export function loadListsFromLocalStorage(shoppingList, boughtList, createListItem, checkEmptyList, checkBoughtList) {
-    const savedItems = JSON.parse(localStorage.getItem("shoppingList")) || [];
+    const savedShoppingItems = JSON.parse(localStorage.getItem("shoppingList")) || [];
+    const savedBoughtItems = JSON.parse(localStorage.getItem("boughtList")) || [];
 
-    savedItems.forEach(item => {
+    savedShoppingItems.forEach(item => {
         if (item && item.name?.trim() !== "") {
             const listItem = createListItem(item.name);
             listItem.querySelector(".text-date").textContent = item.date || "No Date Available";
-
-            if (item.bought) {
-                boughtList.appendChild(listItem);
-                listItem.querySelector(".checkbox-input").checked = true;
-                listItem.querySelector(".customized-checkbox").classList.add("checked");
-                listItem.querySelector("#title-item").style.textDecoration = "line-through";
-            } else {
-                shoppingList.appendChild(listItem);
-            }
+            shoppingList.appendChild(listItem);
         }
     });
+
+
+    savedBoughtItems.forEach(item => {
+        if (item && item.name?.trim() !== "") {
+            const listItem = createListItem(item.name);
+            listItem.querySelector(".text-date").textContent = item.date || "No Date Available";
+            listItem.querySelector(".checkbox-input").checked = true;
+            listItem.querySelector(".customized-checkbox").classList.add("checked");
+            listItem.querySelector("#title-item").style.textDecoration = "line-through";
+            boughtList.appendChild(listItem);
+        }
+    });
+
 
     checkEmptyList(shoppingList);
     checkBoughtList(boughtList);
