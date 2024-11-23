@@ -12,7 +12,11 @@ const deleteItem = (element) => {
 
         checkEmptyList(shoppingList);
         checkBoughtList(boughtList);
+        saveListsToLocalStorage();
     }
 }
 
 export { deleteItem };
+
+
+

@@ -40,6 +40,7 @@ export function createListItem(item) {
         }
 
         checkBoughtList(boughtList);
+        saveListsToLocalStorage();
     });
 
     const customizedCheckbox = document.createElement("div");

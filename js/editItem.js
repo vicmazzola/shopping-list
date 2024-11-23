@@ -1,4 +1,7 @@
-import { generateWeekday } from "./generateWeekday.js";
+import { saveListsToLocalStorage } from "./localStorageHandler.js";
+import {generateWeekday} from "./generateWeekday";
+const shoppingList = document.getElementById("shopping-list");
+const boughtList = document.getElementById("bought-list");
 
 export const editItem = (element) => {
     let newItem = prompt("Enter the new item name:");
@@ -18,5 +21,9 @@ export const editItem = (element) => {
         // Update creation date to the date it was edited
         const creationDate = element.querySelector(".text-date");
         creationDate.textContent = generateWeekday();
+        saveListsToLocalStorage(shoppingList, boughtList);
     }
 }
+
+
+
