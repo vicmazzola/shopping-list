@@ -1,5 +1,7 @@
 import { checkBoughtList } from "./checkBoughtList.js";
 import { checkEmptyList } from "./checkEmptyList.js";
+import { saveListsToLocalStorage } from "./localStorageHandler.js";
+
 
 const shoppingList = document.getElementById("shopping-list");
 const boughtList = document.getElementById("bought-list");
@@ -12,7 +14,7 @@ const deleteItem = (element) => {
 
         checkEmptyList(shoppingList);
         checkBoughtList(boughtList);
-        saveListsToLocalStorage();
+        saveListsToLocalStorage(shoppingList, boughtList);
     }
 }
 

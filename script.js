@@ -2,7 +2,7 @@ import { addItem } from "./js/addItems.js";
 import { checkBoughtList } from "./js/checkBoughtList.js";
 import { checkEmptyList } from "./js/checkEmptyList.js";
 import { createListItem } from "./js/createListItem.js"
-import { saveListsToLocalStorage, loadListsFromLocalStorage } from "./js/localStorageHandler.js";
+import {loadListsFromLocalStorage } from "./js/localStorageHandler.js";
 
 
 const saveItemButton = document.getElementById("add-item");
@@ -15,5 +15,5 @@ checkBoughtList(boughtList);
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadListsFromLocalStorage();
+    loadListsFromLocalStorage(shoppingList, boughtList, createListItem, checkEmptyList, checkBoughtList);
 });

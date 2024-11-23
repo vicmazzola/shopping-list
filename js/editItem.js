@@ -1,5 +1,6 @@
 import { saveListsToLocalStorage } from "./localStorageHandler.js";
-import {generateWeekday} from "./generateWeekday";
+import {generateWeekday} from "./generateWeekday.js";
+
 const shoppingList = document.getElementById("shopping-list");
 const boughtList = document.getElementById("bought-list");
 

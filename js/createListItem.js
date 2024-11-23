@@ -2,6 +2,7 @@ import { editItem } from "./editItem.js";
 import { deleteItem } from "./deleteItem.js";
 import { generateWeekday } from "./generateWeekday.js";
 import { checkBoughtList } from "./checkBoughtList.js";
+import { saveListsToLocalStorage } from "./localStorageHandler.js";
 
 const shoppingList = document.getElementById("shopping-list");
 const boughtList = document.getElementById("bought-list");
@@ -25,10 +26,9 @@ export function createListItem(item) {
     const checkboxLabel = document.createElement("label");
     checkboxLabel.setAttribute("for", checkboxInput.id);
 
-    checkboxLabel.addEventListener("click", function (event) {
-        const checkboxInput = event.currentTarget.querySelector(".checkbox-input");
-        const customizedCheckbox = event.currentTarget.querySelector(".customized-checkbox");
-        const titleItem = event.currentTarget.closest("li").querySelector("#title-item")
+    checkboxLabel.addEventListener("click", function () {
+        const customizedCheckbox = checkboxLabel.querySelector(".customized-checkbox");
+        const titleItem = listItem.querySelector("#title-item")
         if (checkboxInput.checked) {
             customizedCheckbox.classList.add("checked");
             titleItem.style.textDecoration = "line-through";
@@ -40,7 +40,7 @@ export function createListItem(item) {
         }
 
         checkBoughtList(boughtList);
-        saveListsToLocalStorage();
+        saveListsToLocalStorage(shoppingList, boughtList);
     });
 
     const customizedCheckbox = document.createElement("div");
@@ -67,6 +67,7 @@ export function createListItem(item) {
 
     removeButton.addEventListener("click", function () {
         deleteItem(listItem);
+        saveListsToLocalStorage(shoppingList, boughtList);
     });
 
     removeButton.appendChild(removeImage);
@@ -81,6 +82,7 @@ export function createListItem(item) {
 
     editButton.addEventListener("click", function () {
         editItem(listItem);
+        saveListsToLocalStorage(shoppingList, boughtList);
     });
 
     editButton.appendChild(editImage);
@@ -97,4 +99,5 @@ export function createListItem(item) {
     listItem.appendChild(itemDate);
 
     return listItem;
+
 }
