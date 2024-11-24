@@ -201,9 +201,8 @@ ul {
 @media (max-width: 768px) {
     main {
         margin: 16px;
-        margin-left: 36px;
         padding: 18px;
-        width: 100%;
+        width: auto;
     }
 }
 
