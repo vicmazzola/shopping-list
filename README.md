@@ -19,9 +19,10 @@ Explore the application live at: [Shopping List](https://shopping-list-wine-eta.
 
 
 ## ✔️ Technologies Used
-- **HTML** for page structure.
-- **CSS** for styling, including **Bootstrap** for responsive design.
-- **JavaScript** for interactive elements and **DOM manipulation**.
+- **HTML**: For structuring the web page.
+- **CSS**: For styling, including **Bootstrap** for responsive design.
+- **JavaScript**: For interactive elements and **DOM manipulation**.
+  - **SweetAlert2**: For creating modern and customizable alerts.
 
 
 ## 📂 Project Structure
@@ -31,6 +32,18 @@ Explore the application live at: [Shopping List](https://shopping-list-wine-eta.
 - **/js/**: Directory containing modular JavaScript files that manage individual features (e.g., adding items, editing items, managing the list).
 - **/img/**: Directory for storing image assets used in the project, such as icons or illustrations.
 
-
-
-
+```bash
+├── index.html              # The main HTML file, providing content and structure
+├── styles.css              # Custom styles and layout rules for the application
+├── script.js               # The primary JavaScript file for interactivity and DOM updates
+├── js/                     # Directory for modular JavaScript files
+│   ├── createListItem.js   # Handles the creation of list items
+│   ├── checkEmptyList.js   # Checks if the shopping list is empty
+│   ├── checkBoughtList.js  # Checks if the bought list is empty
+│   ├── localStorageHandler.js  # Manages saving and retrieving data from LocalStorage
+│   ├── generateWeekday.js  # Generates formatted weekday strings
+│   ├── img/                    # Directory for image assets (icons, backgrounds, etc.)
+└── README.md               # Documentation file for the project
+```
+## 🚀 Deployment
+The project was deployed using **Vercel**, ensuring fast and reliable hosting.
