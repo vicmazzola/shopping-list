@@ -10,7 +10,13 @@ export function addItem(event) {
     event.preventDefault();
 
     if (item.value === "") {
-        alert("Please, add an item!");
+        Swal.fire({
+            icon: "error",
+            title: "Oops....",
+            text: "Hey bro, you forgot to type something!",
+        }).then(() => {
+            item.focus();
+        })
         return;
     }
 
