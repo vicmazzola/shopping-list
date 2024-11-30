@@ -28,7 +28,7 @@ const deleteItem = (element) => {
                 title: "Deleted!",
                 text: "The item has been deleted.",
                 icon: "success",
-                timer: 2000,
+                timer: 1000,
                 showConfirmButton: false,
             });
         }
