@@ -38,18 +38,31 @@ const deleteItem = (element) => {
 export {deleteItem};
 
 const deleteAllItems = () => {
-    let confirmation = confirm("Are you sure you want to delete all items?");
-    if (confirmation) {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "This action will delete all items from the lists!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete all",
+        cancelButtonText: "Cancel",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            shoppingList.innerHTML = "";
+            boughtList.innerHTML = "";
 
-        shoppingList.innerHTML = "";
-        boughtList.innerHTML = "";
+            checkEmptyList(shoppingList);
+            checkBoughtList(boughtList);
+            saveListsToLocalStorage(shoppingList, boughtList);
 
-
-        checkEmptyList(shoppingList);
-        checkBoughtList(boughtList);
-        saveListsToLocalStorage(shoppingList, boughtList);
-    }
+            Swal.fire({
+                title: "Deleted!",
+                text: "All items have been deleted.",
+                icon: "success",
+                timer: 1500,
+                showConfirmButton: false,
+            });
+        }
+    });
 };
-
 export {deleteAllItems};
 
