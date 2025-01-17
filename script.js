@@ -19,7 +19,6 @@ checkBoughtList(boughtList);
 
 document.addEventListener("DOMContentLoaded", () => {
     loadListsFromLocalStorage(shoppingList, boughtList, createListItem, checkEmptyList, checkBoughtList);
-<<<<<<< HEAD
 });
 
 if ('serviceWorker' in navigator) {
@@ -34,6 +33,3 @@ if ('serviceWorker' in navigator) {
     });
   }
   
-=======
-});
->>>>>>> 92ec63e104f11b5d9036e509cef067981239be9e
