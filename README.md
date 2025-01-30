@@ -45,5 +45,26 @@ Explore the application live at: [Shopping List](https://shopping-list-wine-eta.
 │   ├── img/                    # Directory for image assets (icons, backgrounds, etc.)
 └── README.md               # Documentation file for the project
 ```
+
+## Installation
+To run this project locally:
+
+1. Clone the repository and navigate to the project directory:
+   ```sh
+   git clone https://github.com/vicmazzola/shopping-list
+   cd shopping-list
+   ```
+
+2. Install dependencies:
+```
+npm install
+```
+3. Start the development server:
+```
+npm run dev
+```
+
+
+
 ## 🚀 Deployment
 The project was deployed using **Vercel**, ensuring fast and reliable hosting.
